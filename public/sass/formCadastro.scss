@@ -1,0 +1,97 @@
+ #form_cadastro{
+    width:42%;
+    height:82vh;
+    background-color:rgb(241, 237, 237);
+    border-radius:2px;
+    box-shadow:4px 6px 7px #000;
+    position:absolute;
+    top:35px;
+    margin:10px;
+
+    h1{
+        text-align:center;
+        margin:22px 15px;
+    }
+
+    .field_inputs{
+        display:flex;
+        flex-direction:column;
+    }
+
+    label{
+        width:100%;
+        font-size:17px;
+        margin:10px 2px 5px 4.5rem;
+    }
+    input{
+        width:64%;
+        height:32px;
+        border:2px solid #000;
+        margin:2px 2px 10px 5rem;
+        border-radius:2px;
+        background-color:rgb(189, 195, 195);
+        font-size:17px;
+        padding-left:10px;
+
+        &:focus{
+            outline: 3px solid rgb(25, 25, 137);
+            border:none;
+        }
+    }
+
+    .btn_cadastro{
+        width:140px;
+        height:35px;
+        font-size:18px;
+        font-weight: 600;
+        color:#fff;
+        background-color:blue;
+        border-radius:10px;
+        border:none;
+        position:absolute;
+        top:84%;
+        left:35%;
+        cursor:pointer;
+
+        &:hover{
+            color:rgb(215, 210, 210);
+            background-color:rgb(37, 37, 145);
+        }
+    }
+
+    .phaf_login{
+        position:absolute;
+        bottom:10px;
+        left:10px;
+        
+        a{
+            color:blue;
+            font-weight:bold;
+            font-size:18px;
+            text-decoration:none;
+        }
+    }
+ }
+
+ .user_cad{
+    width:40%;
+    height:180px;
+    background-color:rgb(241, 237, 237);
+    border-radius:2px;
+    box-shadow:4px 6px 7px #000;
+    position:relative;
+
+    h3{
+        font-size:22px;
+        text-align:center;
+        margin:10px;
+    }
+
+    a{
+        position:absolute;
+        top:40%;
+        left:38%;
+        font-size:20px;
+        color:blue;
+    }
+ }
