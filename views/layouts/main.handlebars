@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InverText</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    {{>_navbar}}
+    {{#if error}}
+        <div class="error_msg">{{error}}</div>
+    {{/if}}
+    
+    {{#if error_adm}}
+        <div class="error_adm">{{error_adm}}</div>
+    {{/if}}
+
+    {{>_msg}}
+    {{{body}}}
+    {{>_footer}}
+
+    <script src="/js/index.js"></script>
+</body>
+</html>

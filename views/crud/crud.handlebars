@@ -1,0 +1,78 @@
+<header>
+    <h1>Sistema de cadastro de clientes</h1>
+</header>
+
+<button class="btn_form_cad_open">Cadastrar clientes</button>
+
+<form action="/crud/cadClientes" method="post" class="cad_clientes">
+    <img src="/images/sair.png" alt="" class="btn_cad_closed">
+
+    <h2>Cadastrar Clientes</h2>
+
+    <div class="field_cad">
+        <label for="">Name:
+            <input type="text" name="name">
+        </label>
+
+        <label for="">Email:
+            <input type="email" name="email" id="">
+        </label>
+
+        <label for="">Profession:
+            <input type="text" name="profession">
+        </label>
+
+        <label for="">Telephone:
+            <input type="text" name="telephone" id="">
+        </label>
+
+        <label for="">Cep:
+            <input type="text" name="cep" id="">
+        </label>
+    </div>
+
+
+    <button type="submit" class="btn_cad_submit">cadastrar cliente</button>
+</form>
+
+<table class="table_crud">
+    <thead class="head_crud">
+        <tr>
+            <td>NAME</td>
+            <td>EMAIL</td>
+            <td>PROFESSION</td>
+            <td>TELEPHONE</td>
+            <td>CEP</td>
+            <td>AÇÃO</td>
+        </tr>
+    </thead>
+
+            {{#each clientes}}
+
+    <tbody class="body_crud">
+        <tr>
+                <td>{{name}}</td>
+                <td>{{email}}</td>
+                <td>{{profession}}</td>
+                <td>{{telephone}}</td>
+                <td>{{cep}}</td>
+                <td class="td_btns">
+                    <a url=""><img src="/images/update.png" class="btnUpdate"></a>
+                    <a href="/crud/delete/{{email}}"><img src="/images/delete.png" alt="" class="btnDelete"></a>
+
+                    {{!-- <form action="/crud/delete" method="post">
+                        <input type="hidden" name="email" value="{{email}}">
+
+                        <button style="background:transparent; border:none;">    
+                            <img src="/images/delete.png" alt="" class="btnDelete">
+                        </button>
+
+                        <button type="submit" class="btnDelete">deletar</button>
+                    </form> --}}
+                </td>
+        </tr>
+            {{else}}
+                <h3 class="nobody_client">Nenhum Cliente Cadastrado</h3>
+            {{/each}}
+    </tbody>
+</table>
