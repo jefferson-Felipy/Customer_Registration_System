@@ -1,0 +1,33 @@
+{{!-- Formulário de edição das informacoes dos clientes --}}
+{{#each erros}}
+    <div class="error">{{texto}}</div>
+{{/each}}
+<form action="/successupdate" method="post" class="update_clientes">
+
+    <h2>Register Client</h2>
+
+    <div class="field_update">
+        <label for="">Name:
+            <input type="text" name="name" value="{{cliente.name}}" required>
+        </label>
+
+        <label for="">Email:
+            <input type="email" name="email" value="{{cliente.email}}" required>
+        </label>
+
+        <label for="">Profession:
+            <input type="text" name="profession" value="{{cliente.profession}}" required>
+        </label>
+
+        <label for="">Telephone:
+            <input type="tel" name="telephone" value="{{cliente.telephone}}" required>
+        </label>
+
+        <label for="">Cep:
+            <input type="text" name="cep" value="{{cliente.cep}}" required>
+        </label>
+    </div>
+
+    <button type="submit" class="btn_update_submit">register client</button>
+    <a href="/crud" class="return_crud"> Return </a>
+</form>

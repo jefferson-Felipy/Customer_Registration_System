@@ -1,38 +1,38 @@
 <header>
-    <h1>Sistema de cadastro de clientes</h1>
+    <h1>Customer Registration System</h1>
 </header>
 
-<button class="btn_form_cad_open">Cadastrar clientes</button>
+<button class="btn_form_cad_open">Register Clients</button>
 
-<form action="/crud/cadClientes" method="post" class="cad_clientes">
+<form action="/cadClientes" method="post" class="cad_clientes">
     <img src="/images/sair.png" alt="" class="btn_cad_closed">
 
-    <h2>Cadastrar Clientes</h2>
+    <h2>Register Client</h2>
 
     <div class="field_cad">
         <label for="">Name:
-            <input type="text" name="name">
+            <input type="text" name="name" required>
         </label>
 
         <label for="">Email:
-            <input type="email" name="email" id="">
+            <input type="email" name="email" required>
         </label>
 
         <label for="">Profession:
-            <input type="text" name="profession">
+            <input type="text" name="profession" required>
         </label>
 
         <label for="">Telephone:
-            <input type="text" name="telephone" id="">
+            <input type="tel" name="telephone" id="" required>
         </label>
 
         <label for="">Cep:
-            <input type="text" name="cep" id="">
+            <input type="text" name="cep" id="" required>
         </label>
     </div>
 
 
-    <button type="submit" class="btn_cad_submit">cadastrar cliente</button>
+    <button type="submit" class="btn_cad_submit">register client</button>
 </form>
 
 <table class="table_crud">
@@ -57,22 +57,12 @@
                 <td>{{telephone}}</td>
                 <td>{{cep}}</td>
                 <td class="td_btns">
-                    <a url=""><img src="/images/update.png" class="btnUpdate"></a>
-                    <a href="/crud/delete/{{email}}"><img src="/images/delete.png" alt="" class="btnDelete"></a>
-
-                    {{!-- <form action="/crud/delete" method="post">
-                        <input type="hidden" name="email" value="{{email}}">
-
-                        <button style="background:transparent; border:none;">    
-                            <img src="/images/delete.png" alt="" class="btnDelete">
-                        </button>
-
-                        <button type="submit" class="btnDelete">deletar</button>
-                    </form> --}}
+                    <a href="/update/{{_id}}"><img src="/images/update.png" class="btnUpdate"></a>
+                    <a href="/delete/{{email}}"><img src="/images/delete.png" alt="" class="btnDelete"></a>
                 </td>
         </tr>
             {{else}}
-                <h3 class="nobody_client">Nenhum Cliente Cadastrado</h3>
+                <h3 class="nobody_client">No Registered Customer</h3>
             {{/each}}
     </tbody>
 </table>

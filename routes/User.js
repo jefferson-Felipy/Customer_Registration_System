@@ -13,48 +13,43 @@ const bcrypt = require('bcryptjs');
 //Rota responsável por renderizar o formulário de cadastro_
 User.get('/cadastrar',(req,res) => res.render('formularios/formcadastro'));
 
-//Rota responsável por autenticar o usuario que estar tentando logar na aplicação_
-User.post('/login',(req,res,next) => {
-    passport.authenticate("local",{
-        successRedirect: '/crud/crud',
-        failureRedirect: '/login',
-        failureFlash: true
-    })(req,res,next);
-});
-
 //Rota responsável por cadastrar os usuarios no banco de dados_
 User.post('/cadastro',(req,res) => {
     let erros = [];
 
     if((req.body.name == '') || (typeof req.body.name == undefined) || (req.body.name == null)){
-        erros.push({texto: 'Campo name está incorreto!'});
+        erros.push({texto: 'Name está incorreto!'});
     }
     else if(req.body.name.length < 2){
-        erros.push({texto: 'Campo name muito pequeno!'});
-    }
+        erros.push({texto: 'Name muito pequeno!'});
+    }//-----------------------------
     
-    else if((req.body.year == '') || (typeof req.body.year == undefined) || (req.body.year == null)){
-        erros.push({texto: 'Campo year está incorreto!'});
-    }
+    else if((req.body.age == '') || (typeof req.body.age == undefined) || (req.body.age == null)){
+        erros.push({texto: 'Age está incorreto!'});
+    }//-----------------------------
+
     else if((req.body.email == '') || (typeof req.body.email == undefined) || (req.body.email == null)){
-        erros.push({texto: 'Campo email está incorreto!'});
+        erros.push({texto: 'Email está incorreto!'});
     }
     else if(req.body.email.length < 2){
-        erros.push({texto: 'Campo email muito pequeno!'});
-    }
+        erros.push({texto: 'Email muito pequeno!'});
+    }//-----------------------------
 
     else if((req.body.password == '') || (typeof req.body.password == undefined) || (req.body.password == null)){
-        erros.push({texto: 'Campo password está incorreto!'});
+        erros.push({texto: 'Password está incorreto!'});
     }
-    else if(req.body.password.length < 6){
-        erros.push({texto: 'Campo password muito pequeno!'});
+    else if((req.body.password.length < 6) || (req.body.password.length > 12)){
+        if(req.body.password.length < 6)
+            erros.push({texto: 'Password está muito pequena!'});
+        else if(req.body.password.length > 12)
+            erros.push({texto: 'Password está muito grande!'});
     }
     else if(req.body.password != req.body.password2){
-        erros.push({texto: 'Senhas estao diferentes!'});
-    }
+        erros.push({texto: 'Password estao diferentes!'});
+    }//-----------------------------
 
     if(erros.length > 0){
-        res.render('formularios/formcadastro',{error:erros});
+        res.render('formularios/formcadastro',{erros:erros});
     }
     else{
         Usuario.findOne({email: req.body.email}).then((usuario) => {
@@ -65,7 +60,7 @@ User.post('/cadastro',(req,res) => {
             else{
                 const newUser = {
                     name: req.body.name,
-                    year: req.body.year,
+                    age: req.body.age,
                     email:req.body.email,
                     password:req.body.password
                 }
@@ -98,5 +93,14 @@ User.post('/cadastro',(req,res) => {
 
 //Rota responsável por exibir a mensagem de usuario cadastrado apos o cadastro_
 User.get('/cadastrado',(req,res) => res.render('formularios/cadastrado'));
+
+//Rota responsável por autenticar o usuario que estar tentando logar na aplicação_
+User.post('/login',(req,res,next) => {
+    passport.authenticate("local",{
+        successRedirect: '/crud',
+        failureRedirect: '/login',
+        failureFlash: true
+    })(req,res,next);
+});
 
 module.exports = User;

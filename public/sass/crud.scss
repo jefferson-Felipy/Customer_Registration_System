@@ -12,7 +12,7 @@
     background-color: rgb(18, 29, 156);
     font-weight:500;
     position:relative;
-    right:27.5rem;
+    right:28rem;
     bottom:5px;
     border:none;
 
@@ -21,7 +21,7 @@
         background-color: rgb(26, 33, 112);
     }
 }
-// ---------------------------------------------------------------------------------
+// -----------------------FORMULÁRIO DE REGISTRO DE CLIENTES  -------------------------
 
  .cad_clientes{
     width:45%;
@@ -31,7 +31,7 @@
     z-index: 1000;
     position:absolute;
     left:36px;
-    top:92px;
+    top:9rem;
     display:none;
 
     .btn_cad_closed{
@@ -96,7 +96,8 @@
     }
 
  }
- // ---------------------------------------------------------------------------------
+
+ // ---------------- CRUD -----------------------
 
  .table_crud{
     width:90%;
@@ -138,5 +139,90 @@
     .nobody_client{
        text-decoration:underline;
        position:absolute;
-       top:38%;
+       top:44%;
     }
+
+// ---------------- FORMULARIO DE EDICAO DAS INFORMACOES DOS CLIENTES ----------------
+
+.update_clientes{
+        width:45%;
+        height:62vh;
+        border-radius:5px;
+        background-color:rgb(100, 54, 198);
+        z-index: 1000;
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        box-shadow:3px 5px 6px #000;
+    
+        h2{
+            width:100%;
+            text-align:center;
+            text-decoration:underline;
+            margin:10px;
+            color:#fff;
+        }
+    
+        .field_update{
+            width:100%;
+            display:flex;
+            flex-wrap: wrap;
+            
+            label{
+                width:43%;
+                margin:17px;
+                font-size:18px;
+    
+    
+                input{
+                    width:100%;
+                    height:35px;
+                    margin-top:5px;
+                    border-radius:2px;
+                    border:2px solid #000;
+                    padding-left:10px;
+                    font-size: 18px;
+    
+                    &:focus{
+                        border:none;
+                        outline: 4px solid rgb(18, 29, 156);
+                    }
+                }
+            }
+        }
+    
+        .btn_update_submit{
+            padding:10px;
+            font-size: 17px;
+            border:none;
+            border-radius:5px;
+            position:absolute;
+            left:35%;
+            margin:10px;
+            color:#fff;
+            background-color: rgb(18, 29, 156);
+            cursor:pointer;
+    
+            &:hover{
+                color:rgb(223, 218, 218);
+                background-color: rgb(26, 33, 112);
+            }
+        }
+
+        .return_crud{
+            font-size:20px;
+            color:#fff;
+            text-decoration:none;
+            position:absolute;
+            bottom:12px;
+            left:12px;
+            background-color:blue;
+            border-left:6px solid #fff;
+            padding:4px;
+
+            &:hover{
+                background-color:rgb(8, 8, 133);
+            }
+        }
+}

@@ -57,7 +57,7 @@ app.use(express.static(path.join(__dirname+'/public')));
 //configurando a rota principal_
 app.get('/login',(req,res) => res.render('formularios/formLogin'));
 app.use('/',User);
-app.use('/crud',Crud);
+app.use('/',Crud);
 
 //Configurando o servidor express_
 const PORT = 8081;

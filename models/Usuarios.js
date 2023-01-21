@@ -6,7 +6,7 @@ const Usuario = Schema({
         type:String,
         required:true
     },
-    year:{
+    age:{
         type:String,
         required:true
     },

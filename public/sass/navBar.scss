@@ -1,5 +1,20 @@
 .navbar{
     width:100%;
     height:55px;
-    background-color:cornflowerblue;
+    background-color:rgb(83, 122, 195);
+    display:flex;
+    justify-content: flex-end;
+    padding:18px 25px;
+    
+    a{
+        font-size:22px;
+        color:#fff;
+        text-decoration:none;
+        
+        &:hover{
+            color:rgb(222, 27, 27);
+            text-decoration:underline;
+        }
+    }
+
 }

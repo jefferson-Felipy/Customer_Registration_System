@@ -1,12 +1,12 @@
  #form_cadastro{
     width:42%;
-    height:82vh;
+    height:80vh;
     background-color:rgb(241, 237, 237);
     border-radius:2px;
     box-shadow:4px 6px 7px #000;
-    position:absolute;
-    top:35px;
-    margin:10px;
+    position:relative;
+    top:18px;
+    
 
     h1{
         text-align:center;
@@ -46,7 +46,7 @@
         font-weight: 600;
         color:#fff;
         background-color:blue;
-        border-radius:10px;
+        border-radius:7px;
         border:none;
         position:absolute;
         top:84%;
@@ -74,12 +74,13 @@
  }
 
  .user_cad{
-    width:40%;
+    width:42%;
     height:180px;
     background-color:rgb(241, 237, 237);
     border-radius:2px;
     box-shadow:4px 6px 7px #000;
     position:relative;
+    margin:20px;
 
     h3{
         font-size:22px;
