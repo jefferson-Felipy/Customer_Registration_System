@@ -6,6 +6,6 @@ module.exports = {
         }
 
         req.flash("error_adm","Voce precisa fazer login para ter acesso ao crud!");
-        res.redirect('/login');
+        res.redirect('/');
     }
 }

@@ -120,17 +120,4 @@ Crud.post('/successupdate',eAdmin,(req,res) => {
     }
 });
 
-//rota responável pelo Logout do usuario na aplicação_
-Crud.get('/logout',(req,res,next) => {
-    req.logout(err => {
-        if(err)
-        {
-            return next(err);
-        }
-        req.flash("success_msg","Deslogado com sucesso!");
-        res.redirect('/login');
-    });
-});
-
-
 module.exports = Crud;

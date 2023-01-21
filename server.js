@@ -55,7 +55,7 @@ mongoose.connect('mongodb://localhost/cadastro_de_clientes')
 app.use(express.static(path.join(__dirname+'/public')));
 
 //configurando a rota principal_
-app.get('/login',(req,res) => res.render('formularios/formLogin'));
+app.get('/',(req,res) => res.render('formularios/formLogin'));
 app.use('/',User);
 app.use('/',Crud);
 

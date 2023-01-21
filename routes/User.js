@@ -95,12 +95,24 @@ User.post('/cadastro',(req,res) => {
 User.get('/cadastrado',(req,res) => res.render('formularios/cadastrado'));
 
 //Rota responsável por autenticar o usuario que estar tentando logar na aplicação_
-User.post('/login',(req,res,next) => {
+User.post('/',(req,res,next) => {
     passport.authenticate("local",{
         successRedirect: '/crud',
-        failureRedirect: '/login',
+        failureRedirect: '/',
         failureFlash: true
     })(req,res,next);
+});
+
+//rota responável pelo Logout do usuario na aplicação_
+User.get('/logout',(req,res,next) => {
+    req.logout(err => {
+        if(err)
+        {
+            return next(err);
+        }
+        req.flash("success_msg","Deslogado com sucesso!");
+        res.redirect('/');
+    });
 });
 
 module.exports = User;
