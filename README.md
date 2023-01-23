@@ -1,5 +1,7 @@
 # Customer_Registration_System
-Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma empresa. Registros que poderão ser criados, atualizados e deletados do sistema e do banco de dados.
+Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma empresa. Registros que poderão ser criados, atualizados e deletados do sistema e do banco de dados, feito na linguagem JAVASCRIPT usando a ferramenta NODEJS.
+
+<h4>OBS: Não foi possivel fazer o deploy dessa aplicação devido a alguns problemas em algumas plataformas e devido a estrutura das pastas, por isso nao foi feito o deploy. Entretanto, voçe pode baixar os diretorios e rodar em sua maquina com seu servidor local, para isso, eu lhe ensino logo abaixo do preview a fazer isso em sua maquina. entao desça ate o tópico Como rodar no servidor local, e eu lhe ensinarei!</h4>
 
 <h2>Descrição da Aplicação</h2>
 <ol>
@@ -32,6 +34,22 @@ Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma emp
 <li>O bcrypt também irá compara as senhas, como a senha registrada e a senha inserida pelo usuário no formulário de login, caso essas duas senhas seja iguais, o usuario está autenticado permitindo o seu acesso ao sistema de cadatro de clientes - CRUD.</li>
 <li>Juntamente com o bcrypt, foi utilizado a bblioteca PASSPORT, capaz de autenticar o usuario que esteja registrado no banco de dados.
 </ul>
+
+<h3>Dependençias instaladas</h3>
+<p>Essas dependencias foram instaladas por meio do prompt de comandos(CMD) da maquina, por meio do comando npm install Nome_da_dependencia.</p>
+<p>Fora elas:</p>
+<ol>
+<li> <h5>Express</h5> : npm install express</li>
+<li> <h5>Template engine handlebars</h5> : npm install express-handlebars</li>
+<li> <h5>Path</h5> : npm install path</li>
+<li> <h5>Nodemon</h5> : npm install nodemon</li>
+<li> <h5>session</h5> : npm install express-session</li>
+<li> <h5>Flash</h5> : npm install connect-flash</li>
+<li> <h5>Passport</h5> : npm install passport</li>
+<li> <h5>Passport Local</h5> : npm install passport-local</li>
+<li> <h5>Bcryptjs</h5> : npm install bcryptjs</li>
+<li> <h5>Mongoose</h5> : npm install mongoose</li>
+</ol>
 
 <h2>Preview</h2>
 <li>Página de Login, o usuário precisará ter se registrado primeiro para fazer login_:</li>
@@ -68,5 +86,5 @@ Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma emp
 
 <li>E por fim, para sair da aplicação, é só ele apertar no botão de LOGOUt no canto superior direito, e a sessao do usu´´ario logado será finalizada, saindo, assim do sistema de cadastro de usuario e voltando para a página de login_:</li>
 
-
+![Captura de Tela (125)](https://user-images.githubusercontent.com/119543591/214099917-0a2077d1-9547-473d-90e1-49e1c70f1f42.png)
 
