@@ -64,7 +64,7 @@ Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma emp
 
 <li>Após fazer o registro dos seus dados, ele ira ser redirecionado para essa rota, onde ele irá clicar no link para fazer login, e após, ele poderá entao fazer o login e assim entar no sistema de cadastro_:</li>
 
-
+![Captura de Tela (117)](https://user-images.githubusercontent.com/119543591/214099306-f07f6e3e-8622-4f06-bd18-c4cddd1d353e.png)
 
 <li>E por fim, para sair da aplicação, é só ele apertar no botão de LOGOUt no canto superior direito, e a sessao do usu´´ario logado será finalizada, saindo, assim do sistema de cadastro de usuario e voltando para a página de login_:</li>
 
