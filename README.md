@@ -11,6 +11,8 @@ Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma emp
 
 <li>Após o usuarios se registrar no banco de dados da apliação e fazer o seu login, ele irá entrar no sistema de cadastr0, o chamado CRUD, onde ele poderá criar, registrar os seus crientes no seu banco de dados específico, poderá autera-los modificando os seus dados, além de poder deleta-los quando necessário, para isso o usuario possue um formulário especifico para o registro dos clientes, onde será preenchido com os dados esperados em cada campo do formulário.</li>
 
+<li> Quando o usuário estiver logado na aplicação, ou seja, quando eleestiver na rota de cadatro de clientes, ele poderá clicar no botão de fazer logOut para assim deslogar e sair. Esse botão so é exibido quando o usuario estiver logado no sistema, quando ele sair, o botão desaparece.
+
 <li>Entre outras funcionalidades da aplicação, ela se destaca por ser segura, devido ao seu sistema de autentcação, de verificação das senhas hasheadas por meio o bcrypt registradas no banco, devido a verificação de cada usuario, para que os clientes possame serem cadastrados e seus dados protegidos.</li>
 </ol>
 
@@ -39,4 +41,9 @@ Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma emp
 <li>Após o uruário fazer login, ele entrará no sistema de cadastro onde ele poderá criar/cadastrar os clientes_:</li>
 
 ![Captura de Tela (111)](https://user-images.githubusercontent.com/119543591/214091479-f0511e5d-3964-49a2-9e0c-a53c679dcf25.png)
+
+<li>Entao, quando o usuario criar/cadastrar um cliente, será exibido amensagem de sucesso e abaixo os dados do cliente_:</li>
+
+![Captura de Tela (112)](https://user-images.githubusercontent.com/119543591/214092742-054c869c-3710-4a16-8581-4166ac0b94c7.png)
+
 
