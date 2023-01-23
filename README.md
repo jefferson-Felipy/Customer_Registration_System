@@ -46,4 +46,13 @@ Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma emp
 
 ![Captura de Tela (112)](https://user-images.githubusercontent.com/119543591/214092742-054c869c-3710-4a16-8581-4166ac0b94c7.png)
 
+<li>O usuário também tem a opção de deletar os clientes cadastrados na lista apertando no icone da lixeira, onde o cliente será deletado da lista e do banco de dados.</li>
+
+<li>Além disso, o usuário também terá a opção de editar os dados dos clientes clicando no icone verde no lado dos seus dados, e quando ele clicar, ele será redirecionado para essa rota onde ele irá inserir os dados desejados, atualizando assim os dados do cliente_:</li>
+
+![Captura de Tela (122)](https://user-images.githubusercontent.com/119543591/214094397-95cf095f-4e6e-42f1-82f8-d3c7c1a4493c.png)
+
+<li>Após ele editar os dados do cliente, ele ira ser redirecionado para o sistema de cadastro(CRUD), onde será exibido uma mensagem de sucesso e os dados atualizados serão exibidos. Os dados são atualizados tanto na lista quanto no proprio banco de dados_:</li>
+
+
 
