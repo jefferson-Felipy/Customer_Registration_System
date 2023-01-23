@@ -32,3 +32,5 @@ Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma emp
 </ul>
 
 <h2>Preview</h2>
+
+![Captura de Tela (109)](https://user-images.githubusercontent.com/119543591/214090931-4e4998a8-888d-4fa7-807e-6c8f0acfedaa.png)
