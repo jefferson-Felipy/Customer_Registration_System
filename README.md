@@ -32,5 +32,11 @@ Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma emp
 </ul>
 
 <h2>Preview</h2>
+<li>Página de Login, o usuário precisará ter se registrado primeiro para fazer login_:</li>
 
 ![Captura de Tela (109)](https://user-images.githubusercontent.com/119543591/214090931-4e4998a8-888d-4fa7-807e-6c8f0acfedaa.png)
+
+<li>Após o uruário fazer login, ele entrará no sistema de cadastro onde ele poderá criar/cadastrar os clientes_:</li>
+
+![Captura de Tela (111)](https://user-images.githubusercontent.com/119543591/214091479-f0511e5d-3964-49a2-9e0c-a53c679dcf25.png)
+
