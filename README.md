@@ -1,7 +1,7 @@
 # Customer_Registration_System
 Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma empresa. Registros que poderão ser criados, atualizados e deletados do sistema e do banco de dados.
 
-<h2>Descricao</h2>
+<h2>Descrição da Aplicação</h2>
 <ol>
 <li>O sistema construido possue uma verificação de acesso em que apenas usuarios administradores poderao ter acesso a todas as rotas da aplicação. Caso algum usuário tente entrar na rota do sistema de cadastro dos clientes ou alguma outra rota protegida pela autenticação, será exibido na tela uma mensagem de erro(flash) informando que ele precisa fazer login para ter acesso aquela rota especifica.</li>
 
@@ -30,3 +30,5 @@ Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma emp
 <li>O bcrypt também irá compara as senhas, como a senha registrada e a senha inserida pelo usuário no formulário de login, caso essas duas senhas seja iguais, o usuario está autenticado permitindo o seu acesso ao sistema de cadatro de clientes - CRUD.</li>
 <li>Juntamente com o bcrypt, foi utilizado a bblioteca PASSPORT, capaz de autenticar o usuario que esteja registrado no banco de dados.
 </ul>
+
+<h2>Preview</h2>
