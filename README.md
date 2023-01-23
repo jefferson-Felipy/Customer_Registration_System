@@ -54,7 +54,7 @@ Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma emp
 
 <li>Após ele editar os dados do cliente, ele ira ser redirecionado para o sistema de cadastro(CRUD), onde será exibido uma mensagem de sucesso e os dados atualizados serão exibidos. Os dados são atualizados tanto na lista quanto no proprio banco de dados_:</li>
 
-
+![Captura de Tela (123)](https://user-images.githubusercontent.com/119543591/214098335-78fb4a97-6db7-4f3c-a71d-1a5373af7e45.png)
 
 <hr>
 
@@ -66,7 +66,7 @@ Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma emp
 
 
 
-
+<li>E por fim, para sair da aplicação, é só ele apertar no botão de LOGOUt no canto superior direito, e a sessao do usu´´ario logado será finalizada, saindo, assim do sistema de cadastro de usuario e voltando para a página de login_:</li>
 
 
 
