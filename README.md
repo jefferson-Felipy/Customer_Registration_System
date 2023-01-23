@@ -56,3 +56,17 @@ Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma emp
 
 
 
+<hr>
+
+<li>Mas se, ao tentar logar na aplicação,o usuario nao tiver feito antes nenhum registro, ele nao poderar entrar no sistema de cadastro, sendo obrigatório fazer registro no formulário de registro, onde ele vai inserir os dados necessários_:</li>
+
+![Captura de Tela (116)](https://user-images.githubusercontent.com/119543591/214096969-58bbdcb7-6bf2-4cf2-824c-9aaee4b9103b.png)
+
+<li>Após fazer o registro dos seus dados, ele ira ser redirecionado para essa rota, onde ele irá clicar no link para fazer login, e após, ele poderá entao fazer o login e assim entar no sistema de cadastro_:</li>
+
+
+
+
+
+
+
