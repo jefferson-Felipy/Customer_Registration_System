@@ -38,13 +38,13 @@ Crud.post('/cadClientes',(req,res) => {
 
 //Rota responsável por deletas os dados do banco de dados_
 Crud.get('/delete/:email',(req,res) => {//nao é necessário o where para deletar;
-    Cliente.deleteOne({email: req.params.email}).then(() => {
-        req.flash("success_msg","Sucesso ao deletar cliente!");
-        res.redirect('/crud');
-    }).catch(err => {
-        req.flash("error_msg","Erro ao deletar cliente!");
-        res.redirect('/crud');
-    });
+        Cliente.deleteOne({email: req.params.email}).then(() => {
+            req.flash("success_msg","Sucesso ao deletar cliente!");
+            res.redirect('/crud');
+        }).catch(err => {
+            req.flash("error_msg","Erro ao deletar cliente!");
+            res.redirect('/crud');
+        });
 });
 
 //Rotas responsáveis por editar dados do cliente_
@@ -58,7 +58,7 @@ Crud.get('/update/:id',eAdmin,(req,res) => {
     });
 });
 
-//
+//Rota responável por enviar os dados editados do cliente para o banco d dados_
 Crud.post('/successupdate',eAdmin,(req,res) => {
     let erros = [];
 
