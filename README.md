@@ -106,3 +106,5 @@ Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma emp
 
 <li>Segunda forma de voçe rodar essa aplicação em seu servidor local é clonar esse repositório por meio do seu CMD, onde, na pasta que voçe quiser que esse repositório seja clonado em seu desktop, voçe irá digitar o comando: <strong> git clone https://github.com/jefferson-Felipy/Customer_Registration_System.git</strong>. E apos isso, basta abrir essa pasta onde foi clonado o repositório no seu editor, além de digitar o comando NODEMON no seu cmd na pasta desse diretorio,e então voçe vai abrir o seu navegador e digitar o mesmo endereço da rota principal da aplicação,e estará rodando.</li>
 </ol>
+
+<h4>Desenvolvido por Jeffeson Felipe</h4>
