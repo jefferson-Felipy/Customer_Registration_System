@@ -100,6 +100,9 @@ Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma emp
 
 <p> Após clicar nesse botao, irá abrir uma pequena aba, em baixo dessa aba tem esse campo marcado em vermelho da imagem abaixo, que se chama DOWNLOAD ZIP, voçe simplismente clica, e vai baixar toda aplicação em formato ZIP, e então voçe vai no diretorio de downloads do seu desktop e extraia esse diretorio para uma pasta normal, e após extrair, basta voçe abrir esse diretorio em seu editor de codigo. </p>
 
-
+![Captura de Tela (137)](https://user-images.githubusercontent.com/119543591/215286043-ebc3d187-0244-47f9-bb11-420d7f3f5d43.png)
 
 <p> Apos abrir em seu editor de código o diretorio dessa aplicação, voçe terá que ir ate esse diretorio pelo seu CMD(prompt de comando) e vai digitar o comando NODEMON, e o servidor será aberto. Após isso, voçe vai no seu navegador e digita localhost://8081, e a aplicação irá rodar.</p></li>
+
+<li>Segunda forma de voçe rodar essa aplicação em seu servidor local é clonar esse reositório por meio do seu CMD, onde, na pasta que voçe quiser que esse repositório seja clonado em seu desktop, voçe irá digitar o comando: <strong> git clone </strong>. E apos isso, basta abrir essa pasta onde foi clonado o repositório no seu editor, além de digitar o comando NODEMON no seu cmd na pasta desse diretorio, abrir o seu navegador e digitar o mesmo endereço da rota principal da aplicação.</li>
+</ol>
