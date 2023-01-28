@@ -1,11 +1,11 @@
 # Customer_Registration_System
-Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma empresa. Registros que poderão ser criados, atualizados e deletados do sistema e do banco de dados, feito na linguagem JAVASCRIPT usando a ferramenta NODEJS.
+Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma empresa. Registros que poderão ser criados, atualizados e deletados do sistema e do banco de dados, feito na linguagem JAVASCRIPT usando a ferramenta NODEJS juntamento com o banco de dados nao relacional MongoDB.
 
-<h4>OBS: Não foi possivel fazer o deploy dessa aplicação devido a alguns problemas em algumas plataformas e devido a estrutura das pastas, por isso nao foi feito o deploy. Entretanto, voçe pode baixar os diretorios e rodar em sua maquina com seu servidor local, para isso, eu lhe ensino logo abaixo do preview a fazer isso em sua maquina. entao desça ate o tópico Como rodar no servidor local, e eu lhe ensinarei!</h4>
+<h4>OBS: Não foi possivel fazer o deploy dessa aplicação devido a alguns problemas em algumas plataformas e devido a estrutura das pastas, por isso nao foi feito o deploy. Entretanto, voçe pode baixar os diretorios e rodar em sua maquina com seu servidor local, para isso, eu lhe ensino logo abaixo do preview a fazer isso em sua maquina. entao desça ate o tópico 'Como rodar no servidor local', e eu lhe ensinarei!</h4>
 
 <h2>Descrição da Aplicação</h2>
 <ol>
-<li>O sistema construido possue uma verificação de acesso em que apenas usuarios administradores poderao ter acesso a todas as rotas da aplicação. Caso algum usuário tente entrar na rota do sistema de cadastro dos clientes ou alguma outra rota protegida pela autenticação, será exibido na tela uma mensagem de erro(flash) informando que ele precisa fazer login para ter acesso aquela rota especifica.</li>
+<li>O sistema construido possue uma verificação de acesso em que apenas usuarios administradores poderão ter acesso a todas as rotas da aplicação. Caso algum usuário tente entrar na rota do sistema de cadastro dos clientes ou alguma outra rota protegida pela autenticação, será exibido na tela uma mensagem de erro(flash) informando que ele precisa fazer login para ter acesso aquela rota especifica.</li>
 
 <li> Esse sistema possue, em sua rota principal, uma página responsável pelo login dos usuarios administradores na aplicação, o usuario que já possuir registro irá simplismente inserir o seu E-mail e password para entrar no sistema de cadastro, caso ele nao possua registro, ou seja, caso os seus dados pessoais nao estejam registrados no banco de dados da aplicação, será exibido um flash(mensagem de error) que aquele E-mail ainda nao foi cadastrado no nosso banco, logo, ele nao vai conseguir entrar no sistema de cadastro devido ao sistema de autenticação onde será necessário se cadastrar primeiramente, e após, ir fazer login. mas o E-mail e o password devem ser exatamente iguais aos registrados pelo usuario na rota de registro de usuarios, caso constário, a autenticação do sistema irá exibir os erros.</li>
 
@@ -24,6 +24,7 @@ Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma emp
   <li>JAVASCRIPT !</li>
   <li>NODEJS !</li>
   <li>Template Engine HANDLEBARS !</li>
+  <li>Express-servidor Local</li>
   <li>SASS | CSS !</li>
   <li>PASSPORT para autenticação !</li>
   <li>BCRYPTJS para hashear as senhas e autentica-las !</li>
@@ -90,5 +91,9 @@ Sistema de cadastro de clientes, apto a fazer os registro de clientes de uma emp
 
 
 <h3>Como rodar no servidor local</h3>
-...
+<p>Para voçe rodar essa aplicação em sua maquina, te darei duas formas, sendo a primeira mais simples e a segunda um pouco mais complexo. Vamos la?!</p>
+
+<ol>
+<li> Para voçe rodar essa aplicação na sua maquina/no seu repositório local, voçe irá entrar aqui nesse repositório onde voçe já está e vai no diretorio principal onde está armazenado todos os outros diretórios, acima dos diretorios, voçe vera
+
 
